@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.view-pokemons {
+  display: flex;
+}
+
+.pokemons.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  flex-basis: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 50px;
+}
+
+.move-pokemons {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.main-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
