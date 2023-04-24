@@ -2,6 +2,7 @@ import { AppComponent } from "./components/AppComponent/AppComponent.js";
 import { PokemonCardComponent } from "./components/PokemonCardComponent/PokemonCardComponent.js";
 import { PokemonsListComponent } from "./components/PokemonsListComponent/PokemonsListComponent.js";
 import { buttonsFunctionality } from "./functions/buttonsFunctionality/buttonsFunctionality.js";
+import { getPokemonInformation } from "./functions/getPokemonInformation/getPokemonInformation.js";
 
 const body = document.querySelector("body")!;
 

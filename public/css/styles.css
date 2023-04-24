@@ -1,5 +1,13 @@
+@import url("https://fonts.cdnfonts.com/css/games");
+
 body {
   margin: 0;
+}
+
+.container {
+  font-family: "Games", sans-serif;
+  background-color: rgb(91, 255, 36);
+  height: 100vh;
 }
 
 ul {
@@ -8,6 +16,13 @@ ul {
 
 .view-pokemons {
   display: flex;
+}
+
+.main-nav {
+  font-size: 20px;
+  background: linear-gradient(to right, rgb(178, 248, 173), rgb(186, 212, 190));
+  padding: 10px;
+  border-radius: 10%;
 }
 
 .pokemons.list {
@@ -19,12 +34,25 @@ ul {
 }
 
 li {
-  flex-basis: 20%;
-  padding: 10px;
   box-sizing: border-box;
+  flex-basis: 20%;
+}
+
+button.pokemons {
+  border-radius: 10%;
+  background: linear-gradient(to right, rgb(178, 248, 173), rgb(186, 212, 190));
+  font-size: 25px;
+}
+
+.card-container {
+  flex-basis: 20%;
+  margin: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10%;
+  background: linear-gradient(to right, rgb(148, 255, 112), rgb(77, 231, 26));
 }
 
 button {
@@ -34,7 +62,7 @@ button {
 .move-pokemons {
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  width: 1050px;
 }
 
 .main-view {
@@ -44,8 +72,20 @@ button {
   gap: 30px;
 }
 
+hr {
+  width: 1100px;
+  border: 1px solid black;
+  margin: 30px auto;
+}
+
 .main-header {
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 40px;
+  gap: 200px;
+  padding-top: 20px;
+}
+
+.guion {
+  font-family: "Courier New", Courier, monospace;
 }

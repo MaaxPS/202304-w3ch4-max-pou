@@ -9,7 +9,6 @@ export class PokemonCardComponent extends Component {
 
     (async () => {
       await this.getPokemon(indexPokemon);
-      console.log(this.pokemon);
       this.render();
     })();
   }
@@ -23,8 +22,14 @@ export class PokemonCardComponent extends Component {
 
   render(): void {
     this.element.innerHTML = `
+    <a class="card-container" href="pokemonInformation.html">
     <img class="pokemon image" src="${this.pokemon.sprites.versions["generation-iv"]["heartgold-soulsilver"].front_default}" alt="${this.pokemon.name} sprite" />
     <h3 class="pokemon name">${this.pokemon.name}</h3>
+    </a>
     `;
+
+    document
+      .querySelector(".card-container")
+      ?.addEventListener("click", () => {});
   }
 }
